@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0060)http://getbootstrap.com/2.3.2/examples/starter-template.html -->
+
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <title>Random Te Ching</title>
@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <!-- Le styles -->
+    <!-- styles -->
     <link href="http://getbootstrap.com/2.3.2/assets/css/bootstrap.css" rel="stylesheet">
     <style>
       body {
@@ -15,6 +15,7 @@
       }
     </style>
     <link href="http://getbootstrap.com/2.3.2/assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -24,27 +25,31 @@
   </head>
 
   <body>
-
     <div class="container">
-      <h1>Random Te Ching</h1>
-      <h2>Chapter <span class="ch"></span></h2>
-      <p><span class="verse"></span></p>
-
-
-    </div> 
-    <div class="container">
-      <button class="random">random</button>
-      <button class="inc">+</button>
-      <button class="dec">-</button>
+      <div class="row">
+        
+        <div class="text">
+          <h3>Random Te Ching</h3>
+          
+        </div> 
+        <div class="control">
+          <button class="random">random</button>
+          <button class="inc">+</button>
+          <button class="dec">-</button>
+        </div>
+      </div>
+      <div class="row">
+        <h4>Chapter <span class="ch"></span></h4>
+        <p class="verse"></p>
+      </div>
     </div>
 
       <!-- /container -->
 
-    <!-- Le javascript
+    <!-- js
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
     
-    <script src="./index_files/jquery.js"></script>
+    <script src="assets/js/jquery.js"></script>
     <script type="text/javascript" src="assets/js/tao.js"></script>
     <script type="text/javascript">
     var ttc = new Widget();
